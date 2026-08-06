@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Typingspeed.css">
+</head>
+<body>
+<div class="lang-toggle" id="langToggle">
+  <div class="glider"></div>
+  <button class="lang-btn active" data-lang="en">EN</button>
+  <button class="lang-btn" data-lang="ar">AR</button>
+</div>
+<div class="container">
+    <h1 id="timerDisplay" >00</h1>
+<dialog id="myDialog" class="custom-dialog">
+  <div class="dialog-content">
+    <h3 id="dialogMessage">Message Title</h3>
+    <p id="dialogNumber">0</p>
+    <button onclick="closeDialog()">Close</button>
+  </div>
+</dialog>
+<div id="Display" class="Display"></div>
+    <input id="TextErea"  type="text">
+    <button id="startBtn">Start</button>
+</div>
+    <script src="Typingspeed.js"></script>
+</body>
+</html>

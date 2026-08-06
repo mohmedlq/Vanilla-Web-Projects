@@ -1,0 +1,132 @@
+body {
+    background-color: #1e1e2e;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #2b2b3d;
+    height: 600px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    align-items: center;       
+    gap: 30px;                
+    border: 3px #44445a solid;
+    border-radius: 12px;
+}
+
+.Display {
+    border: 3px #6c7086 solid;
+    background-color: #181825;
+    color: #a6e3a1;
+    height: 150px;
+    width: 500px;
+    text-align: center;
+    line-height: 150px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+    border-radius: 8px;
+}
+
+input {
+    border: 3px #89b4fa solid;
+    background-color: #313244;
+    color: #cdd6f4;
+    height: 150px;
+    width: 500px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+    border-radius: 8px;
+    outline: none;
+}
+.lang-toggle {
+  position: relative;
+  width: 120px;
+  height: 45px;
+  background-color: #2b2b3d;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px;
+  border: 2px solid #44445a;
+  user-select: none;
+}
+
+.lang-btn {
+  flex: 1;
+  height: 100%;
+  background: transparent;
+  border: none;
+  color: #6c7086;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 2; 
+  transition: color 0.3s ease;
+}
+
+.lang-btn.active {
+  color: #181825;
+}
+
+.glider {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 54px;
+  height: 37px;
+  background-color: #89b4fa;
+  border-radius: 20px;
+  z-index: 1;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.lang-toggle.ar .glider {
+  transform: translateX(54px);
+  background-color: #a6e3a1;
+}
+.custom-dialog {
+  border: 2px solid #89b4fa;
+  border-radius: 12px;
+  background-color: #2b2b3d;
+  color: #cdd6f4;
+  padding: 20px 40px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.custom-dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#dialogMessage {
+  margin: 0;
+  font-size: 20px;
+  color: #cdd6f4;
+}
+
+#dialogNumber {
+  font-size: 36px;
+  font-weight: bold;
+  color: #a6e3a1;
+  margin: 10px 0 20px 0;
+}
+
+button {
+  background-color: #89b4fa;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+button:hover
+{
+ background-color: #ccc;    
+}
