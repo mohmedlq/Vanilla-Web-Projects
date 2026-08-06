@@ -130,3 +130,6 @@ button:hover
 {
  background-color: #ccc;    
 }
+.actions-container{
+    display: flex; gap: 10px; justify-content: center; width: 100%; margin-top: 15px;
+}

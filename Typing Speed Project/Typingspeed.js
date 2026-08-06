@@ -8,11 +8,54 @@ const showText = document.getElementById("Display");
 const InputText = document.getElementById("TextErea");
 const startBtn = document.getElementById('startBtn');
 const Timer=document.getElementById("timerDisplay");
+const Startover=document.getElementById("changeWordBtn");
 let count = 0;
 let timerInterval = null;
 const samples = {
-    ar: ["محمد", "موسى", "عيسى"],
-    en: ["Mohamed", "Mousa", "Issa"]
+    ar: [
+        "نص",
+        "قلم",
+        "تفاح",
+        "مستقبل",
+        "برمجة",
+        "خوارزمية",
+        "مكتبة",
+        "تطوير الويب",
+        "الذكاء الاصطناعي",
+        "المملكة العربية السعودية",
+        "المواجهة",
+        "قسطنطينية",
+        "استمرارية",
+        "فسيكفيكهم الله",
+        "التطوير المستمر يضمن النجاح",
+        "الكتابة السريعة تتطلب التركيز",
+        "تعلم الأساسيات أولاً ثم التقنيات الحديثة",
+        "الممارسة اليومية تزيد من الدقة والسرعة",
+        "تحليل البيانات وتصميم الواجهات البرمجية",
+        "لا تستسلم عند مواجهة الأخطاء البرمجية بل تعلم منها"
+    ],
+    en: [
+        "code",
+        "type",
+        "array",
+        "object",
+        "function",
+        "variable",
+        "algorithm",
+        "javascript",
+        "development",
+        "asynchronous",
+        "infrastructure",
+        "responsiveness",
+        "documentation",
+        "vanilla web development",
+        "practice makes perfect",
+        "master the fundamentals first",
+        "component based architecture",
+        "clean code is easy to maintain",
+        "always validate your input data",
+        "continuous learning leads to engineering excellence"
+    ]
 };
 
 buttons.forEach(btn => {
@@ -43,7 +86,10 @@ startBtn.addEventListener('click', () => {
 
 
 });
-
+Startover.addEventListener('click',()=>{RandomText = generateRandomWord();
+    showText.textContent = RandomText;
+    InputText.value = "";
+    InputText.focus();})
 function generateRandomWord()
 {
  const language = langToggle.classList.contains("ar") ? "ar" : "en";
