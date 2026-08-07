@@ -57,7 +57,7 @@ if (!button) return;
         return;
     }
 
-    if (operators.includes(action)){
+if (operators.includes(action)){
 if (CanCalculate()) {
     Calculate();
 }
