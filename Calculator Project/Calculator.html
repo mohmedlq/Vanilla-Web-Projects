@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آلة حاسبة عصرية</title>
+    <link rel="stylesheet" href="Calculator.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display" dir="ltr">
+            <div class="previous-operand" id="previousOperand"></div>
+            <div class="current-operand" id="currentOperand">0</div>
+        </div>
+<div class="history">
+    <div class="history-header">
+        <span>History</span>
+        <button class="history-clear">Clear</button>
+    </div>
+
+    <div class="history-list" id="historyList">
+
+        <!-- Example -->
+        <!--
+        <div class="history-item">
+            <div class="history-expression">15 + 5</div>
+            <div class="history-result">20</div>
+        </div>
+        -->
+
+    </div>
+</div>
+        <div class="keypad">
+            <button class="btn action-btn clear" data-action="clear">AC</button>
+            <button class="btn action-btn" data-action="delete">DEL</button>
+            <button class="btn action-btn" data-action="percentage">%</button>
+            <button class="btn operator" data-action="divide">÷</button>
+
+            <button class="btn number">7</button>
+            <button class="btn number">8</button>
+            <button class="btn number">9</button>
+            <button class="btn operator" data-action="multiply">×</button>
+
+            <button class="btn number">4</button>
+            <button class="btn number">5</button>
+            <button class="btn number">6</button>
+            <button class="btn operator" data-action="subtract">-</button>
+
+            <button class="btn number">1</button>
+            <button class="btn number">2</button>
+            <button class="btn number">3</button>
+            <button class="btn operator" data-action="add">+</button>
+
+            <button class="btn number span-2">0</button>
+            <button class="btn number" data-action="decimal">.</button>
+            <button class="btn equal" data-action="calculate">=</button>
+        </div>
+    </div>
+
+    <script src="Calculator.js"></script>
+</body>
+</html>
