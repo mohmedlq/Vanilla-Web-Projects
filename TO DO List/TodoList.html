@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مهامي | الأزرق المطفي</title>
+    <link rel="stylesheet" href="TodoList.css">
+</head>
+<body>
+    <main class="app-container">
+        <header class="app-header">
+            <h1 class="app-title">مهامي</h1>
+            <p class="app-subtitle">نظم يومك بهدوء وتركيز.</p>
+        </header>
+
+        <form id="task-form" class="task-form">
+            <input type="text" id="task-input" class="task-input" placeholder="ماذا تريد أن تنجز اليوم؟" autocomplete="off" required>
+            <button type="submit" id="add-btn" class="add-btn">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+            </button>
+        </form>
+
+        <ul id="task-list" class="task-list">
+            <li class="task-item">
+                <label class="task-label">
+                    <input type="checkbox" class="task-checkbox">
+                    <span class="custom-checkbox"></span>
+                    <span class="task-text">تصميم واجهة المستخدم باللون الأزرق المطفي</span>
+                </label>
+                <button class="delete-btn">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="3 6 5 6 21 6"></polyline>
+                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </main>
+</body>
+<script src="TodoList.js"></script>
+</html>
