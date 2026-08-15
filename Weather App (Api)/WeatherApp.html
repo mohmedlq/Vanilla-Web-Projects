@@ -1,0 +1,114 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Weather App — Public API (Open-Meteo)</title>
+<link rel="stylesheet" href="WeatherApp.css">
+  </head>
+
+  <body>
+    <div class="app">
+      <div class="card">
+        <h1>Weather App </h1>
+        <div class="muted">
+          Search any city → get current weather + 7-day forecast.
+        </div>
+
+        <div class="row" style="margin-top: 12px">
+          <input id="city" placeholder="Type a city… (e.g., Amman, London, Tokyo)">
+          <button id="btnSearch">Search</button>
+        </div>
+
+        <div class="status muted" id="loading" style="display: none;">
+          <div class="spinner"></div>
+          <div>Loading…</div>
+        </div>
+
+        <div class="error" id="error" style="display: none;"></div>
+
+        <div class="grid" id="results" style="display: grid;">
+          <div class="card">
+            <strong id="placeName">Amman, Jordan</strong>
+            <div class="muted" id="placeMeta" style="margin-top: 6px">Lat/Lon: 31.95522, 35.94503</div>
+
+            <div class="big" id="tempNow">22.5°C</div>
+
+            <div>
+              <span class="pill" id="humidityPill">Humidity: 68%</span>
+              <span class="pill" id="windPill">Wind: 6.7 km/h</span>
+            </div>
+
+            <div class="muted" id="timeMeta" style="margin-top: 10px">Local time: 2026-08-15T06:00 (Asia/Amman)</div>
+          </div>
+
+          <div class="card">
+            <strong>7-Day Forecast</strong>
+            <table>
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Min</th>
+                  <th>Max</th>
+                  <th>Rain</th>
+                </tr>
+              </thead>
+              <tbody id="forecastBody">
+          <tr>
+            <td>2026-08-15</td>
+            <td>22.5°C</td>
+            <td>33.1°C</td>
+            <td>0 mm</td>
+          </tr>
+        
+          <tr>
+            <td>2026-08-16</td>
+            <td>21.7°C</td>
+            <td>33.7°C</td>
+            <td>0 mm</td>
+          </tr>
+        
+          <tr>
+            <td>2026-08-17</td>
+            <td>21°C</td>
+            <td>30.5°C</td>
+            <td>0 mm</td>
+          </tr>
+        
+          <tr>
+            <td>2026-08-18</td>
+            <td>17.5°C</td>
+            <td>30.4°C</td>
+            <td>0 mm</td>
+          </tr>
+        
+          <tr>
+            <td>2026-08-19</td>
+            <td>17.9°C</td>
+            <td>32.3°C</td>
+            <td>0 mm</td>
+          </tr>
+        
+          <tr>
+            <td>2026-08-20</td>
+            <td>20.2°C</td>
+            <td>38.1°C</td>
+            <td>0 mm</td>
+          </tr>
+        
+          <tr>
+            <td>2026-08-21</td>
+            <td>22.9°C</td>
+            <td>39°C</td>
+            <td>0 mm</td>
+          </tr>
+        </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+<script src="WeatherApp.js"></script>
+   
+</body>
+</html>
