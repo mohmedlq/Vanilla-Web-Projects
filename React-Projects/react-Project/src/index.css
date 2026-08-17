@@ -1,0 +1,89 @@
+.card
+{
+border: 2px solid hsl(0, 27%, 57%);
+border-radius: 10px;
+box-shadow: 5px 5px 5px hsla(0, 4%, 37%, 0.973);
+padding: 20px;
+margin: 10px;
+text-align: center;
+max-width: 250px;
+display: inline-block;
+}
+.card-image
+{
+ max-width: 100%;
+ height: auto;
+ border-radius: 50%;
+ margin-bottom: 2px;
+}
+.card .card-title
+{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+margin: 0;
+color: #dabfbfda;
+}
+.card .card-text
+{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: hsla(180, 65%, 62%, 0.705);
+}
+
+
+.student
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  padding: 10px;
+  border:  1px solid hsla(0, 0%, 50%, 0.8);
+}
+.student p{
+  margin: 2px;
+}
+.welcome-message
+{
+ font-size: 2.5em;
+  background-color: hsl(160, 56%, 71%);
+  color: aliceblue;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0;
+}
+.login-prompt
+{
+  font-size: 2.5em;
+  background-color: hsl(0, 82%, 63%);
+  color: aliceblue;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0;
+}
+.list-category
+{
+  font-size: 2.5em;
+  font-weight: bold;
+  color: hsl(208, 54%, 75%);
+  margin-bottom: 10px;
+  text-align: center;
+  border:  3px solid ;
+  border-radius: 5px;
+  background-color: hsl(60, 48%, 78%);
+}
+.listitems
+{
+  font-size: 2em;
+  list-style: none;
+  color: hsl(0, 0%, 25%);
+  text-align: center;
+  margin: 0;
+}
+.listitems li:hover{
+color: hsl(0, 0%, 45%);
+cursor: pointer;
+}
+
+.box
+{
+  border: 3px solid black;
+  padding: 25px;
+  text-align: center;
+}

@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  background-color: #0f172a;
+  color: #f8fafc;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.to-do-list {
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 45px 35px;
+  width: 100%;
+  max-width: 550px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+input[type="text"] {
+  flex: 1;
+  font-size: 1rem;
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: 1px solid #334155;
+  background-color: #1e293b;
+  color: #f8fafc;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+}
+
+button {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+.add-button {
+  background-color: #38bdf8;
+  color: #0f172a;
+  padding: 12px 22px;
+  border-radius: 10px;
+}
+
+.add-button:hover {
+  background-color: #0ea5e9;
+}
+
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+li {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 12px 16px;
+  background-color: #1e293b;
+  margin-bottom: 12px;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: border-color 0.2s ease;
+}
+
+li:hover {
+  border-color: #475569;
+}
+
+.task {
+  flex: 1;
+  text-align: left;
+  color: #e2e8f0;
+  word-break: break-word;
+}
+
+.delete-button {
+  background-color: rgba(239, 68, 68, 0.15);
+  color: #fca5a5;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.delete-button:hover {
+  background-color: #ef4444;
+  color: #ffffff;
+}
+
+.move-button {
+  background-color: rgba(148, 163, 184, 0.1);
+  color: #cbd5e1;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.move-button:hover {
+  background-color: #334155;
+  color: #ffffff;
+}
