@@ -3,6 +3,7 @@ import DataTable from "../../components/dataTable/DataTable";
 import "./Users.scss";
 import { useState } from "react";
 import { userRows } from "../../data";
+import Add from "../../components/add/Add";
 // import { useQuery } from "@tanstack/react-query";
 
 const columns: GridColDef[] = [
@@ -73,13 +74,7 @@ const Users = () => {
         <button onClick={() => setOpen(true)}>Add New User</button>
       </div>
       <DataTable slug="users" columns={columns} rows={userRows} />
-      {/* TEST THE API */}
-
-      {/* {isLoading ? (
-        "Loading..."
-      ) : (
-        <DataTable slug="users" columns={columns} rows={data} />
-      )} */}
+       {open && <Add setOpen={setOpen} slug="user" columns={columns}/>}
     </div>
   );
 };
