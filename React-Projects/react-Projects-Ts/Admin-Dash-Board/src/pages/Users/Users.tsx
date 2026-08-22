@@ -54,19 +54,19 @@ const columns: GridColDef[] = [
   },
 ];
 
-const Users = () => {
-  const [open, setOpen] = useState(false);
 
-  // TEST THE API
+// TEST THE API
 
-  // const { isLoading, data } = useQuery({
+// const { isLoading, data } = useQuery({
   //   queryKey: ["allusers"],
   //   queryFn: () =>
   //     fetch("http://localhost:8800/api/users").then(
   //       (res) => res.json()
   //     ),
   // });
-
+  
+  const Users = () => {
+    const [open, setOpen] = useState(false);
   return (
     <div className="users">
       <div className="info">
